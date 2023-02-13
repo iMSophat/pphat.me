@@ -12,9 +12,12 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .react()
+    
     .postCss("resources/css/app.css", "public/css", [
         require("tailwindcss"),
     ])
+    .react();
+
+mix.copy("resources/js/components/Videos.js", "public/js/components/")
     .copyDirectory("resources/assets", "public/assets");
 
