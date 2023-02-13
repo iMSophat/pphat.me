@@ -21,5 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get('/users', function (Request $request) {
-    return User::paginate(1000);
+    return User::paginate(10000);
 });

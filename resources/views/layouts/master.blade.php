@@ -14,17 +14,10 @@
     {{-- favicons --}}
     <title>{{ __('layout.naviation.menu.name') }}</title>
     @yield('style')
-
-    @php
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
-    @endphp
-
 </head>
 <body class="relative bg-slate-50">
-@include('layouts.header')
-    <div class="w-[100rem] flex-shrink-0 mx-auto">
+    @include('layouts.header')
+    <div class="max-w-[100rem] w-full flex-shrink-0 mx-auto">
         <main class="flex relative w-full">
             <div class="flex-shrink-0 drop-shadow-sm bg-white top-14 h-[calc(100vh_-_3.5rem)] hidden md:block w-80 sticky overflow-y-auto">
                 @include('layouts.sidebar')
