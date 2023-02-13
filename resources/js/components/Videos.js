@@ -87,7 +87,7 @@ window.videoControl = () => {
       1,
       Math.floor((percent * video.duration) / 10)
     )
-    const previewImgSrc = `${window.origin}/assets/videos/preview/preview${previewImgNumber}.jpg`
+    const previewImgSrc = `${window.origin}/assets/videos/preview/preview-${previewImgNumber}.jpg`
     previewImg.src = previewImgSrc
     timelineContainer.style.setProperty("--preview-position", percent)
 
@@ -178,7 +178,7 @@ window.videoControl = () => {
   })
 
   // View Modes
-  theaterBtn.addEventListener("click", toggleTheaterMode)
+  // theaterBtn.addEventListener("click", toggleTheaterMode)
   fullScreenBtn.addEventListener("click", toggleFullScreenMode)
   miniPlayerBtn.addEventListener("click", toggleMiniPlayerMode)
 

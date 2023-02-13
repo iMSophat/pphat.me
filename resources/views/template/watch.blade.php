@@ -11,24 +11,23 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ mix('assets/images/placeholder.svg') }}">
     <link rel="mask-icon" href="{{ mix('assets/images/placeholder.svg') }}">
     @include('utils.head')
-    {{-- favicons --}}
+    
     <title>{{ __('layout.naviation.menu.name') }}</title>
     @yield('style')
 </head>
-<body class="relative bg-slate-50">
+<body class="relative bg-white">
     @include('layouts.header')
     <div class="max-w-[100rem] w-full flex-shrink-0 mx-auto">
         <main class="flex relative w-full">
-            <div class="bg-slate-50 w-full p-5">
+            <div class="w-full sm:p-5">
                 @yield('content')
             </div>
 
-            <div class="flex-shrink-0 drop-shadow-sm bg-white top-14 h-[calc(100vh_-_3.5rem)] hidden md:block w-80 sticky overflow-y-auto">
-                @include('layouts.sidebar')
+            <div class="flex-shrink-0 top-14 h-[calc(100vh_-_3.5rem)] hidden md:block w-[27.5rem] sticky overflow-y-auto">
+                @include('template.list')
             </div>
         </main>
     </div>
-    {{-- @include('utils.script') --}}
     @yield('script')
 </body>
 </html>

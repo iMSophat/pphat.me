@@ -10,62 +10,82 @@
                 </div>
             </div>
             <div class="controls">
-                <button class="play-pause-btn">
-                    <svg class="play-icon" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                <button class="play-pause-btn flex w-5 h-5 pl-2 items-center justify-center">
+
+                    <svg class="play-icon flex items-center justify-center h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 11.9999V8.43989C4 4.01989 7.13 2.2099 10.96 4.4199L14.05 6.1999L17.14 7.9799C20.97 10.1899 20.97 13.8099 17.14 16.0199L14.05 17.7999L10.96 19.5799C7.13 21.7899 4 19.9799 4 15.5599V11.9999Z" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <svg class="pause-icon" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M14,19H18V5H14M6,19H10V5H6V19Z" />
+
+                    <svg class="pause-icon flex items-center justify-center h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none">
+                        <path d="M10.65 19.11V4.89C10.65 3.54 10.08 3 8.64 3H5.01C3.57 3 3 3.54 3 4.89V19.11C3 20.46 3.57 21 5.01 21H8.64C10.08 21 10.65 20.46 10.65 19.11Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 19.11V4.89C21 3.54 20.43 3 18.99 3H15.36C13.93 3 13.35 3.54 13.35 4.89V19.11C13.35 20.46 13.92 21 15.36 21H18.99C20.43 21 21 20.46 21 19.11Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
+                        
                 </button>
                 <div class="volume-container">
                     <button class="mute-btn">
-                        <svg class="volume-high-icon" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+                        <svg class="volume-low-icon h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24">
+                            <path d="M3.33008 10V14C3.33008 16 4.33008 17 6.33008 17H7.76008C8.13008 17 8.50008 17.11 8.82008 17.3L11.7401 19.13C14.2601 20.71 16.3301 19.56 16.3301 16.59V7.41C16.3301 4.43 14.2601 3.29 11.7401 4.87L8.82008 6.7C8.50008 6.89 8.13008 7 7.76008 7H6.33008C4.33008 7 3.33008 8 3.33008 10Z" stroke="#ffffff" stroke-width="2"/>
+                            <path d="M19.3301 8C21.1101 10.37 21.1101 13.63 19.3301 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <svg class="volume-low-icon" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M5,9V15H9L14,20V4L9,9M18.5,12C18.5,10.23 17.5,8.71 16,7.97V16C17.5,15.29 18.5,13.76 18.5,12Z" />
+                            
+                        <svg class="volume-high-icon h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24">
+                            <path d="M2 10V14C2 16 3 17 5 17H6.43C6.8 17 7.17 17.11 7.49 17.3L10.41 19.13C12.93 20.71 15 19.56 15 16.59V7.41C15 4.43 12.93 3.29 10.41 4.87L7.49 6.7C7.17 6.89 6.8 7 6.43 7H5C3 7 2 8 2 10Z" stroke="#ffffff" stroke-width="2"/>
+                            <path d="M18 8C19.78 10.37 19.78 13.63 18 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.8301 5.5C22.7201 9.35 22.7201 14.65 19.8301 18.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <svg class="volume-muted-icon" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z" />
+
+                        <svg class="volume-muted-icon h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24">
+                            <path d="M15 8.37V7.41C15 4.43 12.93 3.29 10.41 4.87L7.49 6.7C7.17 6.89 6.8 7 6.43 7H5C3 7 2 8 2 10V14C2 16 3 17 5 17H7" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.4102 19.13C12.9302 20.71 15.0002 19.56 15.0002 16.59V12.95" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.81 9.42001C19.71 11.57 19.44 14.08 18 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.1501 7.79999C22.6201 11.29 22.1801 15.37 19.8301 18.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 2L2 22" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
+                            
                     </button>
                     <input class="volume-slider" type="range" min="0" max="1" step="any" value="1">
                 </div>
-                <div class="duration-container">
-                    <div class="current-time">0:00</div>
-                    /
-                    <div class="total-time"></div>
+                <div class="duration-container text-xs">
+                    <div class="current-time text-xs">0:00</div> / <div class="total-time text-xs"></div>
                 </div>
-                <button class="captions-btn">
-                    <svg viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M18,11H16.5V10.5H14.5V13.5H16.5V13H18V14A1,1 0 0,1 17,15H14A1,1 0 0,1 13,14V10A1,1 0 0,1 14,9H17A1,1 0 0,1 18,10M11,11H9.5V10.5H7.5V13.5H9.5V13H11V14A1,1 0 0,1 10,15H7A1,1 0 0,1 6,14V10A1,1 0 0,1 7,9H10A1,1 0 0,1 11,10M19,4H5C3.89,4 3,4.89 3,6V18A2,2 0 0,0 5,20H19A2,2 0 0,0 21,18V6C21,4.89 20.1,4 19,4Z" />
-                    </svg>
-                </button>
-                <button class="speed-btn wide-btn">
-                    1x
-                </button>
-                <button class="mini-player-btn">
-                    <svg viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zm-10-7h9v6h-9z" />
-                    </svg>
-                </button>
-                <button class="theater-btn">
-                    <svg class="tall" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M19 6H5c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 10H5V8h14v8z" />
-                    </svg>
-                    <svg class="wide" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M19 7H5c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm0 8H5V9h14v6z" />
-                    </svg>
-                </button>
-                <button class="full-screen-btn">
-                    <svg class="open" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" />
-                    </svg>
-                    <svg class="close" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z" />
-                    </svg>
-                </button>
+                <div class="flex items-center gap-1">   
+                    <button class="speed-btn wide-btn  h-4 w-4 sm:h-5 sm:w-5 flex items-center text-xs justify-center"> 1x </button>
+                    
+                    <button class="captions-btn flex items-center justify-center">
+                        <svg class=" h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" >
+                            <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.5 17.0801H15.65" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.97 17.0801H6.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.5 13.3201H11.97" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.27 13.3201H6.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <button class="mini-player-btn flex items-center justify-center">
+                        <svg class=" h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.6 18.5H16.4C17.9 18.5 18.5 17.9 18.5 16.4V14.6C18.5 13.1 17.9 12.5 16.4 12.5H12.6C11.1 12.5 10.5 13.1 10.5 14.6V16.4C10.5 17.9 11.1 18.5 12.6 18.5Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+    
+                    <button class="full-screen-btn flex items-center justify-center">
+                        <svg class="open h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none">
+                            <path d="M2 9V6.5C2 4.01 4.01 2 6.5 2H9" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 2H17.5C19.99 2 22 4.01 22 6.5V9" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 16V17.5C22 19.99 19.99 22 17.5 22H16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 22H6.5C4.01 22 2 19.99 2 17.5V15" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            
+                        <svg class="close h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 18V14H6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 6V10H18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 14L14 14V18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 10H10V6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
         <video id="video" autoplay="true" src="https://vjs.zencdn.net/v/oceans.mp4">
@@ -73,6 +93,7 @@
         </video>
     </div>
 @endsection
+
 @section('script')
     <script src="{{ asset('js/components/Videos.js') }}"></script>
     <script>

@@ -24,6 +24,10 @@ Route::get('/watch', function () {
     return view('pages.watch');
 });
 
+Route::get('/layout', function () {
+    return view('template.layout');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
