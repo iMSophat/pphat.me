@@ -1,4 +1,4 @@
-<div id="playList">
+{{-- <div id="playList">
     <div class="py-5 px-3">
         <div class="border rounded-md p-5 flex flex-wrap gap-3">
             <div class="w-full">
@@ -10,7 +10,7 @@
             @endfor
         </div>
     </div>
-</div>
+</div> --}}
 
 <div id="list">
     <ul class="py-5 flex flex-col gap-2 px-3">
@@ -24,7 +24,7 @@
                 </svg>
             </button>
             <div class="border flex-shrink-0 overflow-hidden rounded-lg h-24">
-                <img class="w-40 h-24 object-cover" src="{{ asset('assets/videos/preview/preview-2.jpg') }}" alt="">
+                <img class="w-40 h-24 object-cover" src="https://www.nintenderos.com/wp-content/uploads/2022/07/animes.jpg.webp" alt="">
             </div>
             <div>
                 <h1 class="text-sm font-medium w-[92%]">Whereas recognition of the inherent dignity</h1>

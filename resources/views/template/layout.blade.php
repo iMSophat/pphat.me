@@ -7,9 +7,9 @@
     <title>Layout</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
-<body>
+<body class=" bg-slate-100">
     <header class="w-full bg-white drop-shadow">
-        <nav class="max-w-[100rem] mx-auto flex justify-between w-full p-3">
+        <nav class="max-w-[90rem] mx-auto flex justify-between w-full p-3">
             <div class="w-40 flex items-center justify-center flex-shrink-0">
                 <button type="button">
                     <svg class="flex w-7 h-7" viewBox="0 0 24 24">
@@ -45,5 +45,59 @@
             </div>
         </nav>
     </header>
+
+    <main class="max-w-[90rem] mx-auto w-full flex gap-2">
+        <div class="flex h-[calc(100vh_-_5.3rem)] overflow-y-auto w-80 flex-shrink-0 py-5 bg-white">
+            <ul class="w-full px-4">
+                <li class="flex items-center gap-5 bg-slate-200 rounded-lg py-1.5 px-3">
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.02 2.84L3.63 7.04C2.73 7.74 2 9.23 2 10.36V17.77C2 20.09 3.89 21.99 6.21 21.99H17.79C20.11 21.99 22 20.09 22 17.78V10.5C22 9.29 21.19 7.74 20.2 7.05L14.02 2.72C12.62 1.74 10.37 1.79 9.02 2.84Z" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 17.99V14.99" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <a href="javascript:void(0)" class="w-full text-base font-medium">Home</a>
+                </li>
+                <li class="flex items-center gap-5 hover:bg-slate-200 rounded-lg py-1.5 px-3">
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.02 2.84L3.63 7.04C2.73 7.74 2 9.23 2 10.36V17.77C2 20.09 3.89 21.99 6.21 21.99H17.79C20.11 21.99 22 20.09 22 17.78V10.5C22 9.29 21.19 7.74 20.2 7.05L14.02 2.72C12.62 1.74 10.37 1.79 9.02 2.84Z" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 17.99V14.99" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <a href="javascript:void(0)" class="w-full text-base">Trending</a>
+                </li>
+                <li class="flex items-center gap-5 hover:bg-slate-200 rounded-lg py-1.5 px-3">
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.02 2.84L3.63 7.04C2.73 7.74 2 9.23 2 10.36V17.77C2 20.09 3.89 21.99 6.21 21.99H17.79C20.11 21.99 22 20.09 22 17.78V10.5C22 9.29 21.19 7.74 20.2 7.05L14.02 2.72C12.62 1.74 10.37 1.79 9.02 2.84Z" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 17.99V14.99" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <a href="javascript:void(0)" class="w-full text-base">Category</a>
+                </li>
+                <li class="flex items-center gap-5 hover:bg-slate-200 rounded-lg py-1.5 px-3">
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.02 2.84L3.63 7.04C2.73 7.74 2 9.23 2 10.36V17.77C2 20.09 3.89 21.99 6.21 21.99H17.79C20.11 21.99 22 20.09 22 17.78V10.5C22 9.29 21.19 7.74 20.2 7.05L14.02 2.72C12.62 1.74 10.37 1.79 9.02 2.84Z" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 17.99V14.99" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <a href="javascript:void(0)" class="w-full text-base">Anime</a>
+                </li>
+                <li class="flex items-center gap-5 hover:bg-slate-200 rounded-lg py-1.5 px-3">
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.02 2.84L3.63 7.04C2.73 7.74 2 9.23 2 10.36V17.77C2 20.09 3.89 21.99 6.21 21.99H17.79C20.11 21.99 22 20.09 22 17.78V10.5C22 9.29 21.19 7.74 20.2 7.05L14.02 2.72C12.62 1.74 10.37 1.79 9.02 2.84Z" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 17.99V14.99" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <a href="javascript:void(0)" class="w-full text-base">Wallpaper</a>
+                </li>
+                <li class="flex items-center gap-5 hover:bg-slate-200 rounded-lg py-1.5 px-3">
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.02 2.84L3.63 7.04C2.73 7.74 2 9.23 2 10.36V17.77C2 20.09 3.89 21.99 6.21 21.99H17.79C20.11 21.99 22 20.09 22 17.78V10.5C22 9.29 21.19 7.74 20.2 7.05L14.02 2.72C12.62 1.74 10.37 1.79 9.02 2.84Z" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 17.99V14.99" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <a href="javascript:void(0)" class="w-full text-base">Following</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="w-full p-5">
+
+        </div>
+    </main>
+
 </body>
 </html>

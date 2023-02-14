@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
     "/js/components/Videos.js": "/js/components/Videos.js",
     "/assets/images/placeholder.svg": "/assets/images/placeholder.svg",
     "/assets/images/PPHAT.ME.svg": "/assets/images/PPHAT.ME.svg",
@@ -9,6 +10,5 @@
     "/assets/videos/preview/preview-4.jpg": "/assets/videos/preview/preview-4.jpg",
     "/assets/videos/preview/preview-5.jpg": "/assets/videos/preview/preview-5.jpg",
     "/assets/videos/subtitle/subtitles.vtt": "/assets/videos/subtitle/subtitles.vtt",
-    "/assets/videos/uploads/oceans.mp4": "/assets/videos/uploads/oceans.mp4",
-    "/css/app.css": "/css/app.css"
+    "/assets/videos/uploads/oceans.mp4": "/assets/videos/uploads/oceans.mp4"
 }

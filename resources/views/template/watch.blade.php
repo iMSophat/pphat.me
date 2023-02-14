@@ -17,13 +17,13 @@
 </head>
 <body class="relative bg-white">
     @include('layouts.header')
-    <div class="max-w-[100rem] w-full flex-shrink-0 mx-auto">
+    <div class="max-w-[90rem] w-full flex-shrink-0 mx-auto">
         <main class="flex relative w-full">
             <div class="w-full sm:p-5">
                 @yield('content')
             </div>
 
-            <div class="flex-shrink-0 top-14 h-[calc(100vh_-_3.5rem)] hidden md:block w-[27.5rem] sticky overflow-y-auto">
+            <div class="flex-shrink-0 top-14 h-[calc(100vh_-_5rem)] hidden md:block w-[27.5rem] sticky overflow-y-auto">
                 @include('template.list')
             </div>
         </main>

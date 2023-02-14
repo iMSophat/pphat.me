@@ -1,6 +1,5 @@
 <header class="w-full px-2 sm:px-5 sticky top-0 z-50 drop-shadow-sm bg-white/80 backdrop-blur-sm">
-    <nav class="max-w-[100rem] mx-auto flex">
-        
+    <nav class="max-w-[90rem] mx-auto flex">
         <button type="button" class="w-20 sm:w-32 py-2 md:w-80 flex-shrink-0">
             <img class="max-h-14 object-cover" src="{{ mix('assets/images/PPHAT.ME.svg') }}" alt="{{ __('layout.naviation.menu.name') }}">
         </button>
@@ -14,7 +13,6 @@
                         <path d="M12.3901 12.7778L11.2345 11.6222" stroke="#292D32" stroke-width="0.866667" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
-                
             </div>
             <button class="flex items-center justify-center">
                 <img class="w-7 h-7 p-1 ring-2 ring-transparent hover:ring-orange-500 rounded-full object-cover" src="{{ mix('assets/images/placeholder.svg') }}" alt="{{ __('layout.naviation.menu.avatar') }}">
