@@ -88,10 +88,60 @@
                 </div>
             </div>
         </div>
-        <video id="video" autoplay="true" src="https://vjs.zencdn.net/v/oceans.mp4">
+        
+        <video id="video" autoplay="true" src="https://vjs.zencdn.net/v/{{ $version }}">
             <track kind="captions" srclang="en" src="{{ asset('assets/videos/subtitle/subtitles.vtt') }}">
         </video>
     </div>
+
+    <div class="py-3">
+        <h1 class="font-medium">BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense. Season 2</h1>
+        <div class="flex w-full justify-between items-center relative pt-10">
+            
+            <div class="flex items-center relative w-1/2 p-3 border rounded-md">
+                <div class="w-16 flex-shrink-0">
+                    <img class="w-16 absolute -top-5 h-16 object-cover rounded-full" src="https://z-p3-scontent.fpnh5-4.fna.fbcdn.net/v/t39.30808-1/302925799_787548502395648_6773811241356637409_n.jpg?stp=dst-jpg_p320x320&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=gwyyVc7g-r0AX9WPG30&_nc_ht=z-p3-scontent.fpnh5-4.fna&oh=00_AfBXK7LAlYBPx9A2hHmr-RDdjbt1XaGUJg_pMFJTrXJaYg&oe=63FC0BDE" alt="">
+                </div>
+                <div class="flex px-7 flex-col w-full justify-start items-center">
+                    <h1 class="w-full font-medium">Adventure / Action</h1>
+                    <p class="w-full text-xs">65.7k Follower</p>
+                </div>
+                <button class="bg-[#092857] px-3 py-1 text-white rounded-full text-sm" type="button">Follow</button>
+            </div>
+
+            <div class="flex justify-end gap-3 items-center w-1/2">
+                <div class="flex gap-3 items-center bg-slate-100 px-3 rounded-full py-1">
+                    <button class="flex gap-1 items-center">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997" stroke="#071F43" stroke-width="1.5" stroke-miterlimit="10"/>
+                            <path d="M2.38 18.35V8.55002C2.38 7.15002 2.98 6.65002 4.38 6.65002H5.38C6.78 6.65002 7.38 7.15002 7.38 8.55002V18.35C7.38 19.75 6.78 20.25 5.38 20.25H4.38C2.98 20.25 2.38 19.75 2.38 18.35Z" stroke="#071F43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-slate-500 text-sm">65.7k</span>
+                    </button>
+                    |
+                    <button class="flex items-center">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.52 5.65002L13.42 3.25002C13.02 2.85002 12.12 2.65002 11.52 2.65002H7.71998C6.51998 2.65002 5.21998 3.55002 4.91998 4.75002L2.51998 12.05C2.01998 13.45 2.91998 14.65 4.41998 14.65H8.41998C9.01998 14.65 9.51998 15.15 9.41998 15.85L8.91998 19.05C8.71998 19.95 9.31998 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"/>
+                            <path d="M21.62 5.65V15.45C21.62 16.85 21.02 17.35 19.62 17.35H18.62C17.22 17.35 16.62 16.85 16.62 15.45V5.65C16.62 4.25 17.22 3.75 18.62 3.75H19.62C21.02 3.75 21.62 4.25 21.62 5.65Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <button class="flex items-center gap-2 bg-slate-100 px-3 rounded-full py-1">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1.66663C5.40002 1.66663 1.66669 5.39996 1.66669 9.99996C1.66669 14.6 5.40002 18.3333 10 18.3333C14.6 18.3333 18.3334 14.6 18.3334 9.99996" stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.8333 9.16671L17.6666 2.33337" stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.3333 5.69163V1.66663H14.3083" stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Share</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="p-3 mt-3 border rounded-lg">
+        <p class="text-sm text-slate-500">Second season of BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense.  After an enthusiastic invitation from her friend, Kaede Honjou reluctantly agrees to try New World Online: a very popular VRMMO played by thousands of people</p>
+    </div>
+
 @endsection
 
 @section('script')

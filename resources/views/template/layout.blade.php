@@ -94,8 +94,34 @@
 
             </ul>
         </div>
-        <div class="w-full p-5">
 
+        <div class="w-full p-5">
+            <div class="p-5 bg-white rounded-md grid grid-cols-4 gap-5">
+            
+                @for ($i=0; $i<15; $i++)
+
+
+                    <div class="bg-white col-span-1">
+                        <img class="w-full h-36 object-cover rounded-lg" src="https://assets-prd.ignimgs.com/2022/08/17/top25animecharacters-blogroll-1660777571580.jpg" alt="">
+                        <div class="flex w-full">
+                            
+                            <div class="w-full">
+                                <h1 class="font-medium">The Top 25 Greatest Anime Characters of All Time</h1>
+                                <p class="text-slate-500 text-sm">29k views</p>
+                            </div>
+
+                            <div class="w-12 flex-shrink-0 p-1">
+                                <img class="w-10 h-full max-h-10 object-cover rounded-full" src="https://assets-prd.ignimgs.com/2022/08/17/top25animecharacters-blogroll-1660777571580.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                @endfor
+
+            </div>
         </div>
     </main>
 

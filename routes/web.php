@@ -24,6 +24,11 @@ Route::get('/watch', function () {
     return view('pages.watch');
 });
 
+Route::get('/watch/{version}', function ($version) {
+    return view('pages.watch', compact('version'));
+});
+
+
 Route::get('/layout', function () {
     return view('template.layout');
 });
